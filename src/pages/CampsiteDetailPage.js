@@ -7,14 +7,9 @@ import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 
 const CampsiteDetailPage = () => {
-<<<<<<< HEAD
     const { campsiteId } = useParams();
     const campsite = useSelector(selectCampsiteById(campsiteId));
     console.log('campsite:', campsite);
-=======
-  const { campsiteId } = useParams();
-  const campsite = selectCampsiteById(campsiteId);
->>>>>>> bb45aaa6623070b1040444729edc635468fc8a39
 
   return (
     <Container>
