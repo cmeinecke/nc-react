@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { Col, Row } from 'reactstrap';
-import { selectCommentsByCampsiteId } from '../comments/commentsSlice';
-import CampsiteCard from "./CampsiteCard";
+import { selectAllCampsites } from './campsitesSlice';
+import CampsiteCard from './CampsiteCard';
 
 const CampsitesList = () => {
-    const campsites = useSelector(selectCommentsByCampsiteId);
+    const campsites = useSelector(selectAllCampsites);
     console.log('campsites:', campsites);
 
     return (
